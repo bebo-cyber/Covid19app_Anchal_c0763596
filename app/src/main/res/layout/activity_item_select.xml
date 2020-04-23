@@ -37,8 +37,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="USA"
-        android:textSize="18dp"
-        android:layout_marginTop="10dp"/>
+        android:textSize="28dp"
+        android:layout_marginTop="50dp"/>
     />
 
     <TextView
@@ -64,8 +64,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Mexico"
-        android:textSize="18dp"
-        android:layout_marginTop="10dp"/>
+        android:textSize="28dp"
+        android:layout_marginTop="50dp"/>
     />
 
     <TextView
@@ -84,8 +84,13 @@
         android:text="10592"
         android:textSize="18dp"
         android:layout_marginTop="10dp"/>
-    />
-    />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_marginTop="10dp"/>
 
 
 </LinearLayout>
