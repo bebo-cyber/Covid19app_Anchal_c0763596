@@ -3,13 +3,18 @@ package com.example.covid19app_anchal_c0763596;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener
+
+
+{
     Spinner spinner;
 
     @Override
@@ -26,8 +31,22 @@ public class MainActivity extends AppCompatActivity {
         continent.add("Europe");
         continent.add("Asia");
 
+
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item,continent);
 
         spinner.setAdapter(adapter);
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        //if (parent.getId() == R.id.spinner)
+       // {
+         //   String valuefromSpinner = parent.getItemAtPosition(position.toString());
+        //}
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
     }
 }
